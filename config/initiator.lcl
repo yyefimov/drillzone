@@ -9,7 +9,7 @@ BeginString=FIX.4.4
 TargetCompID=ACC_LCL
 StartTime=00:00:00
 EndTime=00:00:00
-HeartBtInt=30
+HeartBtInt=60
 SocketConnectPort=6523
 SocketConnectHost=127.0.0.1
 # (optional) alternate connection ports and hosts to cycle through on failover
@@ -18,7 +18,7 @@ SocketConnectHost=127.0.0.1
 #SocketConnectPort2=2932
 #SocketConnectHost2=12.12.12.12
 #FileStorePath=/home/yyefimov/tmp/qf/ini_lcl
-FileStorePath=SPECIFY PATH WHERE QF WILL STORE FILES OF SESSIONS
+FileStorePath=C:\home\dev\drillzone\config\
 #DataDictionary=/home/yyefimov/git/drillzone/config/FIX44.xml
-DataDictionary=FULL PATH TO FIX44.xml
+DataDictionary=C:\home\dev\drillzone\config\FIX44.xml
 
