@@ -1,6 +1,6 @@
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio Express 2013 for Windows Desktop
-VisualStudioVersion = 12.0.21005.1
+# Visual Studio 2013
+VisualStudioVersion = 12.0.31101.0
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "example_executor_cpp", "examples\executor\C++\example_executor_cpp_vs12.vcxproj", "{AC97D259-3231-4575-8CA5-BF9EF79B5A87}"
 EndProject
@@ -25,6 +25,13 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "test_acceptance_runner", "t
 	EndProjectSection
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "UnitTest++_vs12", "UnitTest++\UnitTest++_vs12.vcxproj", "{64A4FEFE-0461-4E95-8CC1-91EF5F57DBC6}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "seq", "examples\seq\seq.vcxproj", "{AC66A685-F4DB-435B-9101-A0AEA4A7EA55}"
+	ProjectSection(ProjectDependencies) = postProject
+		{D5D558EA-BBAC-4862-A946-D3881BACE3B7} = {D5D558EA-BBAC-4862-A946-D3881BACE3B7}
+	EndProjectSection
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "router", "examples\router\router.vcxproj", "{6BCAC1C4-C4E3-4FBB-A11C-ABB549835EEA}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -126,6 +133,26 @@ Global
 		{64A4FEFE-0461-4E95-8CC1-91EF5F57DBC6}.Release|Mixed Platforms.Build.0 = Release|Win32
 		{64A4FEFE-0461-4E95-8CC1-91EF5F57DBC6}.Release|Win32.ActiveCfg = Release|Win32
 		{64A4FEFE-0461-4E95-8CC1-91EF5F57DBC6}.Release|Win32.Build.0 = Release|Win32
+		{AC66A685-F4DB-435B-9101-A0AEA4A7EA55}.Debug|Any CPU.ActiveCfg = Debug|Win32
+		{AC66A685-F4DB-435B-9101-A0AEA4A7EA55}.Debug|Mixed Platforms.ActiveCfg = Debug|Win32
+		{AC66A685-F4DB-435B-9101-A0AEA4A7EA55}.Debug|Mixed Platforms.Build.0 = Debug|Win32
+		{AC66A685-F4DB-435B-9101-A0AEA4A7EA55}.Debug|Win32.ActiveCfg = Debug|Win32
+		{AC66A685-F4DB-435B-9101-A0AEA4A7EA55}.Debug|Win32.Build.0 = Debug|Win32
+		{AC66A685-F4DB-435B-9101-A0AEA4A7EA55}.Release|Any CPU.ActiveCfg = Release|Win32
+		{AC66A685-F4DB-435B-9101-A0AEA4A7EA55}.Release|Mixed Platforms.ActiveCfg = Release|Win32
+		{AC66A685-F4DB-435B-9101-A0AEA4A7EA55}.Release|Mixed Platforms.Build.0 = Release|Win32
+		{AC66A685-F4DB-435B-9101-A0AEA4A7EA55}.Release|Win32.ActiveCfg = Release|Win32
+		{AC66A685-F4DB-435B-9101-A0AEA4A7EA55}.Release|Win32.Build.0 = Release|Win32
+		{6BCAC1C4-C4E3-4FBB-A11C-ABB549835EEA}.Debug|Any CPU.ActiveCfg = Debug|Win32
+		{6BCAC1C4-C4E3-4FBB-A11C-ABB549835EEA}.Debug|Mixed Platforms.ActiveCfg = Debug|Win32
+		{6BCAC1C4-C4E3-4FBB-A11C-ABB549835EEA}.Debug|Mixed Platforms.Build.0 = Debug|Win32
+		{6BCAC1C4-C4E3-4FBB-A11C-ABB549835EEA}.Debug|Win32.ActiveCfg = Debug|Win32
+		{6BCAC1C4-C4E3-4FBB-A11C-ABB549835EEA}.Debug|Win32.Build.0 = Debug|Win32
+		{6BCAC1C4-C4E3-4FBB-A11C-ABB549835EEA}.Release|Any CPU.ActiveCfg = Release|Win32
+		{6BCAC1C4-C4E3-4FBB-A11C-ABB549835EEA}.Release|Mixed Platforms.ActiveCfg = Release|Win32
+		{6BCAC1C4-C4E3-4FBB-A11C-ABB549835EEA}.Release|Mixed Platforms.Build.0 = Release|Win32
+		{6BCAC1C4-C4E3-4FBB-A11C-ABB549835EEA}.Release|Win32.ActiveCfg = Release|Win32
+		{6BCAC1C4-C4E3-4FBB-A11C-ABB549835EEA}.Release|Win32.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
