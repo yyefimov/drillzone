@@ -7,6 +7,8 @@
 
 #include "quickfix/Utility.h"
 
+#include "SocketWrapper.h"
+
 //#include <winsock2.h>
 #include <ws2tcpip.h>
 #include <windows.h> 
@@ -18,6 +20,11 @@
 
 int _tmain(int argc, _TCHAR* argv[])
 {
+
+	SocketWrapper sw;
+
+	std::cout << sw.test() << std::endl;
+
 	int index = 0,                      // Integer index
 		iRecvLen;                       // Length of recv_sin
 	TCHAR szError[100];                 // Error message string

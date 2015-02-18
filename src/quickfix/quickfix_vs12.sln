@@ -38,6 +38,8 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "router", "examples\router\r
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "stream", "examples\stream\stream.vcxproj", "{AC906FF9-E7EA-4F11-A4B8-D4E6FE66AE86}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "sor", "examples\sor\sor.vcxproj", "{A81DFD90-32E4-426D-8162-D8D7AF3AAE24}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -168,6 +170,16 @@ Global
 		{AC906FF9-E7EA-4F11-A4B8-D4E6FE66AE86}.Release|Mixed Platforms.Build.0 = Release|Win32
 		{AC906FF9-E7EA-4F11-A4B8-D4E6FE66AE86}.Release|Win32.ActiveCfg = Release|Win32
 		{AC906FF9-E7EA-4F11-A4B8-D4E6FE66AE86}.Release|Win32.Build.0 = Release|Win32
+		{A81DFD90-32E4-426D-8162-D8D7AF3AAE24}.Debug|Any CPU.ActiveCfg = Debug|Win32
+		{A81DFD90-32E4-426D-8162-D8D7AF3AAE24}.Debug|Mixed Platforms.ActiveCfg = Debug|Win32
+		{A81DFD90-32E4-426D-8162-D8D7AF3AAE24}.Debug|Mixed Platforms.Build.0 = Debug|Win32
+		{A81DFD90-32E4-426D-8162-D8D7AF3AAE24}.Debug|Win32.ActiveCfg = Debug|Win32
+		{A81DFD90-32E4-426D-8162-D8D7AF3AAE24}.Debug|Win32.Build.0 = Debug|Win32
+		{A81DFD90-32E4-426D-8162-D8D7AF3AAE24}.Release|Any CPU.ActiveCfg = Release|Win32
+		{A81DFD90-32E4-426D-8162-D8D7AF3AAE24}.Release|Mixed Platforms.ActiveCfg = Release|Win32
+		{A81DFD90-32E4-426D-8162-D8D7AF3AAE24}.Release|Mixed Platforms.Build.0 = Release|Win32
+		{A81DFD90-32E4-426D-8162-D8D7AF3AAE24}.Release|Win32.ActiveCfg = Release|Win32
+		{A81DFD90-32E4-426D-8162-D8D7AF3AAE24}.Release|Win32.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
