@@ -3,11 +3,15 @@
 
 #include "stdafx.h"
 
+#include "SocketWrapper.h"
+
 #define _WINSOCKAPI_
 
 //#include <winsock.h>
 #include <ws2tcpip.h>
 #include <windows.h> 
+
+#include <iostream>
 
 #define DEST_MCAST        "234.5.6.7"     
 #define DESTINATION_PORT  4567            
@@ -16,6 +20,10 @@
 
 int _tmain(int argc, _TCHAR* argv[])
 {
+	stream::SocketWrapper sw;
+
+	std::cout << sw.test() << std::endl;
+
 	int iOptVal = 64;
 	char szMessage[] = "Multicasting message!";
 	// Sent message string
@@ -97,8 +105,7 @@ int _tmain(int argc, _TCHAR* argv[])
 		return FALSE;
 	}
 	else
-		MessageBox(NULL, TEXT("Sending data succeeded!"), TEXT("Info"),
-		MB_OK);
+		MessageBox(NULL, TEXT("Sending data succeeded!"), TEXT("Info"), MB_OK);
 
 	// Disable sending on Sock before closing it.
 	shutdown(Sock, 0x01);

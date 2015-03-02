@@ -29,16 +29,22 @@ EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "seq", "examples\seq\seq.vcxproj", "{AC66A685-F4DB-435B-9101-A0AEA4A7EA55}"
 	ProjectSection(ProjectDependencies) = postProject
 		{D5D558EA-BBAC-4862-A946-D3881BACE3B7} = {D5D558EA-BBAC-4862-A946-D3881BACE3B7}
+		{AC906FF9-E7EA-4F11-A4B8-D4E6FE66AE86} = {AC906FF9-E7EA-4F11-A4B8-D4E6FE66AE86}
 	EndProjectSection
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "router", "examples\router\router.vcxproj", "{6BCAC1C4-C4E3-4FBB-A11C-ABB549835EEA}"
 	ProjectSection(ProjectDependencies) = postProject
 		{D5D558EA-BBAC-4862-A946-D3881BACE3B7} = {D5D558EA-BBAC-4862-A946-D3881BACE3B7}
+		{AC906FF9-E7EA-4F11-A4B8-D4E6FE66AE86} = {AC906FF9-E7EA-4F11-A4B8-D4E6FE66AE86}
 	EndProjectSection
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "stream", "examples\stream\stream.vcxproj", "{AC906FF9-E7EA-4F11-A4B8-D4E6FE66AE86}"
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "sor", "examples\sor\sor.vcxproj", "{A81DFD90-32E4-426D-8162-D8D7AF3AAE24}"
+	ProjectSection(ProjectDependencies) = postProject
+		{D5D558EA-BBAC-4862-A946-D3881BACE3B7} = {D5D558EA-BBAC-4862-A946-D3881BACE3B7}
+		{AC906FF9-E7EA-4F11-A4B8-D4E6FE66AE86} = {AC906FF9-E7EA-4F11-A4B8-D4E6FE66AE86}
+	EndProjectSection
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

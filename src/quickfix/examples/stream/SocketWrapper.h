@@ -1,10 +1,16 @@
-#pragma once
-class SocketWrapper
+#ifndef SOCKET_WRAPPER_H
+#define SOCKET_WRAPPER_H
+
+namespace stream
 {
-public:
-	SocketWrapper();
-	~SocketWrapper();
+	class SocketWrapper
+	{
+	public:
+		SocketWrapper();
+		~SocketWrapper();
 
-	int test() { return 6; }
-};
+		int test() { return 6; }
+	};
+}
 
+#endif

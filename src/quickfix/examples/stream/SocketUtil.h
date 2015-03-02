@@ -66,6 +66,7 @@
 #include <process.h>
 #include <direct.h>
 #include <time.h>
+#include <ws2tcpip.h>
 typedef int socklen_t;
 typedef int ssize_t;
 /////////////////////////////////////////////
