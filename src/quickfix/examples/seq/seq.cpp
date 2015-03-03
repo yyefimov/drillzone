@@ -10,9 +10,7 @@
 #define SOURCE_PORT       0               
 
 int main(int argc, char** argv)
-{
-	char szMessage[] = "Multicasting message!";
-
+{	
 	stream::socket_init();
 	int sock = stream::socket_create_udp();
 
@@ -25,6 +23,7 @@ int main(int argc, char** argv)
 	dest_sin.sin_addr.s_addr = inet_addr(DEST_MCAST);
 
 	// Send a message to the multicasting address.
+	char szMessage[] = "Multicasting message!";
 	sendto(sock, szMessage, strlen(szMessage) + 1, 0, (struct sockaddr FAR *) &dest_sin, sizeof(dest_sin));
 
 	stream::socket_close(sock);

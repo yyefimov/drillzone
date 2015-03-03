@@ -24,7 +24,7 @@ int main(int argc, char** argv)
 	char szMessageA[100];
 
 	// Receive data from the multicasting group server.
-	while(ssize_t size = recv(sock, szMessageA, sizeof(szMessageA), 0) != SOCKET_ERROR)
+	while(int size = recv(sock, szMessageA, sizeof(szMessageA), 0) != SOCKET_ERROR)
 	{
 		std::cout << szMessageA << std::endl;
 	}
