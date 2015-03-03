@@ -100,6 +100,30 @@ namespace stream
 #endif
 	}
 
+	int socket_create_udp()
+	{
+		return socket(AF_INET, SOCK_DGRAM, IPPROTO_UDP);
+	}
+
+	int socket_bind(int socket, int port)
+	{
+		SOCKADDR_IN local_sin;              // Local socket's address
+		local_sin.sin_family = AF_INET;
+		local_sin.sin_port = htons(port);
+		local_sin.sin_addr.s_addr = htonl(INADDR_ANY);
+
+		// Associate the local address with Sock.
+		return bind(socket, (struct sockaddr FAR *) &local_sin, sizeof(local_sin));
+	}
+
+	int socket_add_membership(int socket, const char * recv_ip_addr)
+	{
+		struct ip_mreq mreq;                // Used in adding or dropping multicasting addresses
+		mreq.imr_multiaddr.s_addr = inet_addr(recv_ip_addr);
+		mreq.imr_interface.s_addr = htonl(INADDR_ANY);
+		return setsockopt(socket, IPPROTO_IP, IP_ADD_MEMBERSHIP, (char FAR *)&mreq, sizeof(mreq));
+	}
+
 	int socket_createAcceptor(int port, bool reuse)
 	{
 		int socket = ::socket(PF_INET, SOCK_STREAM, 0);
